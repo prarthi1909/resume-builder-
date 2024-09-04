@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Resume Builder</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        <form id="resumeForm">
+            <!-- Personal Information Section -->
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <!-- Add more fields as needed (e.g., email, phone, etc.) -->
+            </fieldset>
+
+            <!-- Experience Section -->
+            <fieldset>
+                <legend>Experience</legend>
+                <!-- Experience fields can be dynamically added with JavaScript -->
+                <button type="button" onclick="addExperience()">Add Experience</button>
+                <div id="experienceFields"></div>
+            </fieldset>
+
+            <!-- Education Section -->
+            <fieldset>
+                <legend>Education</legend>
+                <!-- Education fields can be dynamically added with JavaScript -->
+                <button type="button" onclick="addEducation()">Add Education</button>
+                <div id="educationFields"></div>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Display generated resume here -->
+        <div id="resumeOutput"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
